@@ -5,12 +5,13 @@ import SimpleComponent from './components/SimpleComponent';
 import SimplerComponent from './components/SimplerComponent';
 
 ReactDOM.render(
-  <div>
+  <React.Fragment>
     <SimpleComponent />
     <SimplerComponent handleClick={() => console.log("hello world")} />
-  </div>,
+  </React.Fragment>,
   document.getElementById('root')
 );
+//4:50 AM 10/01/2022 added react fragment to parent
 
 //if we wanted a more complex function, we could use this.handleClick and right the function
 //in the parent container component (which may contain state)
